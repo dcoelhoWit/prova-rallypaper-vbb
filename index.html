@@ -599,6 +599,15 @@ tailwind.config = {
 <script>
   let submitted = false;
 
+  document.querySelectorAll('#customForm input[required]').forEach((input) => {
+    input.addEventListener('invalid', () => {
+      input.setCustomValidity('Campo obrigatório.');
+    });
+    input.addEventListener('input', () => {
+      input.setCustomValidity('');
+    });
+  });
+
   function showSuccess() {
     const teamName = (document.getElementById('name')?.value || '').trim();
     const filledZones = document.querySelectorAll('.zone-input');
