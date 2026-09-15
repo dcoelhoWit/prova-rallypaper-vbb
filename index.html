@@ -195,6 +195,215 @@ tailwind.config = {
       </div>
     </div>
 
+    <!-- RULES BRIEFING -->
+    <div class="bg-surface-card rounded-xl p-space-md shadow-xl flex flex-col gap-space-md">
+      <div class="flex items-center gap-space-xs">
+        <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-secondary-container text-on-secondary-container">
+          <span class="material-symbols-outlined text-[16px]">gavel</span>
+        </span>
+        <h2 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wide">Regras da Prova</h2>
+      </div>
+      <p class="font-body-sm text-body-sm text-text-radar-dim">Se ainda não leram durante a inscrição leiam agora &mdash; estas são as regras oficiais do Rally Paper VBB 2026.</p>
+
+      <div class="flex flex-col gap-space-sm">
+
+        <!-- 1. Objetivo -->
+        <details class="group bg-surface-container-lowest rounded-lg" open>
+          <summary class="flex items-center justify-between gap-space-sm p-space-sm cursor-pointer select-none">
+            <span class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">flag_circle</span>
+              Objetivo
+            </span>
+            <span class="material-symbols-outlined text-text-radar-dim text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="px-space-sm pb-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+            <p>A prova consiste em encontrar as <strong class="text-primary-fixed-dim">9 zonas</strong> espalhadas pelo percurso, resolver o desafio proposto em cada uma delas, obter o respetivo código e inscrevê-lo na folha de prova. No final, a equipa deve regressar ao ponto de partida.</p>
+            <p class="mt-space-sm">Vence a equipa que reunir o maior número de <strong>códigos de desafio</strong>. Em caso de empate, prevalece o <strong>menor tempo de prova</strong>.</p>
+          </div>
+        </details>
+
+        <!-- 2. Tempo Limite -->
+        <details class="group bg-surface-container-lowest rounded-lg">
+          <summary class="flex items-center justify-between gap-space-sm p-space-sm cursor-pointer select-none">
+            <span class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">timer</span>
+              Tempo Limite
+            </span>
+            <span class="material-symbols-outlined text-text-radar-dim text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="px-space-sm pb-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+            <p>A prova tem a duração máxima de <strong>2 horas e 30 minutos</strong>, a contar a partir da partida.</p>
+            <div class="mt-space-sm flex items-start gap-space-xs bg-error-container/20 border-l-4 border-hazard-stripe rounded p-space-sm">
+              <span class="material-symbols-outlined text-hazard-stripe text-[20px] shrink-0">warning</span>
+              <p class="font-body-sm text-body-sm text-on-surface"><strong>Atenção:</strong> ultrapassar este limite implica penalização &mdash; os resultados dessa equipa deixam de ser contabilizados na classificação final. Giram bem o vosso tempo!</p>
+            </div>
+          </div>
+        </details>
+
+        <!-- 3. Chegada ao Ponto de Partida -->
+        <details class="group bg-surface-container-lowest rounded-lg">
+          <summary class="flex items-center justify-between gap-space-sm p-space-sm cursor-pointer select-none">
+            <span class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">how_to_reg</span>
+              Chegada ao Ponto de Partida
+            </span>
+            <span class="material-symbols-outlined text-text-radar-dim text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="px-space-sm pb-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+            <p>Cada equipa deve apresentar-se atempadamente no ponto de partida para finalizar a inscrição através do pagamento devido e receber a respetiva <strong>folha de prova</strong> &mdash; o documento oficial onde irão registar os códigos obtidos em cada zona.</p>
+          </div>
+        </details>
+
+        <!-- 4. A Folha de Prova -->
+        <details class="group bg-surface-container-lowest rounded-lg">
+          <summary class="flex items-center justify-between gap-space-sm p-space-sm cursor-pointer select-none">
+            <span class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">description</span>
+              A Folha de Prova
+            </span>
+            <span class="material-symbols-outlined text-text-radar-dim text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="px-space-sm pb-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+            <p>Na folha de prova encontram uma <strong>pista para cada uma das 9 zonas</strong>, bem como um campo próprio para inserir o código de desafio correspondente. É este documento que valida a vossa prestação &mdash; preencham-no com atenção e mantenham-no sempre convosco.</p>
+          </div>
+        </details>
+
+        <!-- 5. O Farejador -->
+        <details class="group bg-surface-container-lowest rounded-lg">
+          <summary class="flex items-center justify-between gap-space-sm p-space-sm cursor-pointer select-none">
+            <span class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">radar</span>
+              O Farejador
+            </span>
+            <span class="material-symbols-outlined text-text-radar-dim text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="px-space-sm pb-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+            <p>Para aceder ao desafio de cada zona e obterem o respetivo código, as equipas devem recorrer ao <strong>Farejador</strong> &mdash; a ferramenta digital que utiliza o GPS do telemóvel para confirmar que se encontram dentro de uma das zonas da prova. Podem aceder-lhe a qualquer momento através dos botões &ldquo;Validar no Farejador&rdquo; espalhados pela folha de prova.</p>
+            <p class="mt-space-sm">Assim que o Farejador confirma a vossa localização, o desafio dessa zona é revelado no ecrã. Ao resolverem-no corretamente, surge o código de desafio &mdash; copiem-no de imediato para o campo correspondente na folha de prova, para que possa ser contabilizado.</p>
+
+            <!-- Farejador flow diagram -->
+            <div class="mt-space-sm grid grid-cols-2 xs:grid-cols-4 gap-space-xs">
+              <div class="flex flex-col items-center text-center gap-1 bg-surface-card rounded p-space-xs">
+                <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">visibility</span>
+                <span class="font-label-sm text-label-sm text-primary-fixed-dim">PASSO 01</span>
+                <span class="font-label-md text-label-md text-on-surface">Seguir Pista</span>
+              </div>
+              <div class="flex flex-col items-center text-center gap-1 bg-surface-card rounded p-space-xs">
+                <span class="material-symbols-outlined text-secondary-container text-[20px]">radar</span>
+                <span class="font-label-sm text-label-sm text-secondary-container">PASSO 02</span>
+                <span class="font-label-md text-label-md text-on-surface">Validar GPS</span>
+              </div>
+              <div class="flex flex-col items-center text-center gap-1 bg-surface-card rounded p-space-xs">
+                <span class="material-symbols-outlined text-tertiary text-[20px]">extension</span>
+                <span class="font-label-sm text-label-sm text-tertiary">PASSO 03</span>
+                <span class="font-label-md text-label-md text-on-surface">Desafio</span>
+              </div>
+              <div class="flex flex-col items-center text-center gap-1 bg-surface-card rounded p-space-xs">
+                <span class="material-symbols-outlined text-primary-container text-[20px]">key</span>
+                <span class="font-label-sm text-label-sm text-primary-container">PASSO 04</span>
+                <span class="font-label-md text-label-md text-on-surface">Inserir Código</span>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- 6. Composição das Equipas -->
+        <details class="group bg-surface-container-lowest rounded-lg">
+          <summary class="flex items-center justify-between gap-space-sm p-space-sm cursor-pointer select-none">
+            <span class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">groups</span>
+              Composição das Equipas
+            </span>
+            <span class="material-symbols-outlined text-text-radar-dim text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="px-space-sm pb-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+            <p>A organização recomenda equipas com pelo menos <strong>3 a 4 elementos</strong>. Um bom conselho: dividam tarefas e tentem juntar competências complementares. Equipas bem organizadas costumam ser as mais rápidas.</p>
+            <div class="mt-space-sm grid grid-cols-2 xs:grid-cols-4 gap-space-xs">
+              <div class="flex flex-col items-center text-center gap-1 bg-surface-card rounded p-space-xs">
+                <span class="material-symbols-outlined text-text-radar-dim text-[20px]">directions_car</span>
+                <span class="font-label-md text-label-md text-on-surface">Boa Condução</span>
+              </div>
+              <div class="flex flex-col items-center text-center gap-1 bg-surface-card rounded p-space-xs">
+                <span class="material-symbols-outlined text-text-radar-dim text-[20px]">map</span>
+                <span class="font-label-md text-label-md text-on-surface">Conhecer a Zona</span>
+              </div>
+              <div class="flex flex-col items-center text-center gap-1 bg-surface-card rounded p-space-xs">
+                <span class="material-symbols-outlined text-text-radar-dim text-[20px]">smartphone</span>
+                <span class="font-label-md text-label-md text-on-surface">À-Vontade c/ Tecnologia</span>
+              </div>
+              <div class="flex flex-col items-center text-center gap-1 bg-surface-card rounded p-space-xs">
+                <span class="material-symbols-outlined text-text-radar-dim text-[20px]">psychology</span>
+                <span class="font-label-md text-label-md text-on-surface">Resolver Problemas</span>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- 7. Como Ler as Pistas -->
+        <details class="group bg-surface-container-lowest rounded-lg">
+          <summary class="flex items-center justify-between gap-space-sm p-space-sm cursor-pointer select-none">
+            <span class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">visibility</span>
+              Como Ler as Pistas
+            </span>
+            <span class="material-symbols-outlined text-text-radar-dim text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="px-space-sm pb-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+            <p>As imagens que acompanham cada pista podem parecer pequenas &mdash; toquem nelas para as ampliar e ver todos os detalhes.</p>
+            <p class="mt-space-sm">Fiquem também atentos a <strong>jogos de palavras</strong>: por exemplo, uma bandeira do Reino Unido pode ser uma pista para pensarem no nome do local em inglês. Nem tudo é o que parece à primeira vista!</p>
+          </div>
+        </details>
+
+        <!-- 8. Ordem da Prova -->
+        <details class="group bg-surface-container-lowest rounded-lg">
+          <summary class="flex items-center justify-between gap-space-sm p-space-sm cursor-pointer select-none">
+            <span class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">route</span>
+              Ordem da Prova
+            </span>
+            <span class="material-symbols-outlined text-text-radar-dim text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="px-space-sm pb-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+            <p>A ordem recomendada é seguir a folha de prova exatamente como está organizada. No entanto, são livres de visitar as zonas pela ordem que preferirem &mdash; a única regra é terminar a prova de volta no ponto de partida.</p>
+            <div class="mt-space-sm flex items-center justify-center gap-space-xs bg-surface-card rounded-lg p-space-sm">
+              <div class="flex flex-col items-center gap-1 text-center">
+                <span class="material-symbols-outlined text-secondary-container text-[22px]">sports_score</span>
+                <span class="font-label-sm text-label-sm text-on-surface">Início</span>
+              </div>
+              <span class="material-symbols-outlined text-text-radar-dim text-[18px]">sync_alt</span>
+              <div class="flex flex-col items-center gap-1 text-center">
+                <span class="material-symbols-outlined text-tertiary text-[22px]">grid_view</span>
+                <span class="font-label-sm text-label-sm text-on-surface">9 Zonas<br>(qualquer ordem)</span>
+              </div>
+              <span class="material-symbols-outlined text-text-radar-dim text-[18px]">sync_alt</span>
+              <div class="flex flex-col items-center gap-1 text-center">
+                <span class="material-symbols-outlined text-secondary-container text-[22px]">flag</span>
+                <span class="font-label-sm text-label-sm text-on-surface">Chegada</span>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <!-- 9. Segurança Rodoviária -->
+        <details class="group bg-surface-container-lowest rounded-lg">
+          <summary class="flex items-center justify-between gap-space-sm p-space-sm cursor-pointer select-none">
+            <span class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">health_and_safety</span>
+              Segurança Rodoviária
+            </span>
+            <span class="material-symbols-outlined text-text-radar-dim text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="px-space-sm pb-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+            <div class="flex items-start gap-space-xs bg-error-container/20 border-l-4 border-hazard-stripe rounded p-space-sm">
+              <span class="material-symbols-outlined text-hazard-stripe text-[20px] shrink-0">warning</span>
+              <p class="font-body-sm text-body-sm text-on-surface">Conduzam sempre com responsabilidade. Respeitem o código da estrada, os limites de velocidade e os restantes utentes da via &mdash; nenhum código de desafio vale um risco desnecessário.</p>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+
     <!-- ROADBOOK MATRIX HEADER & PROGRESS HUD -->
     <div class="bg-surface-container-low rounded-xl p-space-md shadow-lg flex flex-col gap-space-sm">
       <div class="flex items-center justify-between">
